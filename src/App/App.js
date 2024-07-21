@@ -1,29 +1,17 @@
 import "./App.css";
-import RedditLogoSVG from "../Resources/RedditLogoSVG";
-import SearchIconSVG from "../Resources/SearchIconSVG";
+import NavBar from "../Components/Navbar/Navbar";
+import Subreddits from "../Components/Subreddits/Subreddits/Subreddits";
+import Posts from "../Components/PostsComponents/Posts/Posts";
 
-function App() {
+function App({ state, dispatch }) {
+  console.log(state.subreddits);
   return (
     <div id="app">
-      <header>
-        <div id="logo">
-          {RedditLogoSVG}
-          <h1>RedditMinimal</h1>
-        </div>
-        <nav>
-          <form>
-            <input
-              type="text"
-              placeholder="Search"
-              id="searchBar"
-              aria-role="Search Bar"
-            />
-            <button type="submit" id="submitButton" aria-label="Search">
-              {SearchIconSVG}
-            </button>
-          </form>
-        </nav>
-      </header>
+      <NavBar dispatch={dispatch} />
+      <div id="mainContentContainer">
+        <Posts state={state} dispatch={dispatch} />
+        <Subreddits state={state.subreddits} dispatch={dispatch} />
+      </div>
     </div>
   );
 }

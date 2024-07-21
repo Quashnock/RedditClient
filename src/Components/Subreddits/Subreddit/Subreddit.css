@@ -1,0 +1,24 @@
+.subreddit {
+  display: flex;
+  height: 8rem;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-left: 10px solid hsl(0, 0%, 80%);
+  background-color: hsl(0, 0%, 95%);
+  margin: 10px 0;
+  cursor: pointer;
+}
+.selected {
+  border-left: 10px solid hsl(240, 100%, 70%);
+}
+.subreddit img {
+  height: 40%;
+  aspect-ratio: 1;
+  border: hsl(0, 0%, 80%) 3px solid;
+  border-radius: 50%;
+}
+
+.subreddit h3 {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}

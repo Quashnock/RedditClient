@@ -1,0 +1,11 @@
+aside {
+  min-height: 10em;
+  flex-basis: 22%;
+  flex-grow: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+  padding: 0rem 2rem;
+}
+
+aside h2 {
+  font-size: 3rem;
+}

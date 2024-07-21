@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const navbarSlice = createSlice({
   name: "navbar",
   initialState: {
-    term: "slice",
+    term: "",
   },
   reducers: {
     setTerm: (state, action) => {
