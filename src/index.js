@@ -6,12 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./App/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const render = () =>
+const render = () => {
+  console.log(store);
   root.render(
     <React.StrictMode>
       <App state={store.getState()} dispatch={store.dispatch} />
     </React.StrictMode>
   );
+};
 render();
 store.subscribe(render);
 // If you want to start measuring performance in your app, pass a function
