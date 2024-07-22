@@ -10,7 +10,9 @@ function App({ state, dispatch }) {
       <NavBar dispatch={dispatch} />
       <div id="mainContentContainer">
         <Posts state={state} dispatch={dispatch} />
-        <Subreddits state={state.subreddits} dispatch={dispatch} />
+        <div id="subredditsContainer">
+          <Subreddits state={state.subreddits} dispatch={dispatch} />
+        </div>
       </div>
     </div>
   );
