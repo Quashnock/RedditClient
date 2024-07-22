@@ -1,0 +1,87 @@
+article {
+  display: flex;
+  width: 100%;
+  box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 10px 0px;
+  min-height: 40vh;
+  border-radius: 6px;
+  padding: 3rem 0 3rem 0;
+}
+#upvotesColumn {
+  flex-grow: 0;
+  flex-basis: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.2rem;
+}
+#upvotesColumn h3 {
+  margin: 1.5rem;
+  line-height: 2rem;
+}
+
+#upvotesColumn svg {
+  font-size: 4rem;
+}
+
+#contentColumn {
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding-right: 3rem;
+}
+
+#postTitle {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#mainImage {
+  width: 100%;
+  border-radius: 8px;
+  margin: 0;
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+#postSubContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  font-size: 1.5rem;
+}
+
+#userProfile {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+#userProfileImage {
+  height: 65%;
+  border-radius: 50%;
+  border: hsl(0, 0%, 80%) 0.35rem solid;
+}
+
+#username {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(240, 100%, 70%);
+}
+
+#commentsToggle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#commentsToggle svg {
+  font-size: 2.5rem;
+}
+
+#commentsNum {
+  margin-left: 1rem;
+}

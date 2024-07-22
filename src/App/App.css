@@ -5,20 +5,10 @@
 
 #mainContentContainer {
   min-height: 90vh;
-  margin-top: 10px;
+  margin-top: 2.5rem;
   display: flex;
 }
-main {
-  min-height: 90vh;
-  padding: 0 3rem;
-  flex-grow: 1;
-  flex-basis: 200px;
-}
-.post {
-  width: 100%;
-  box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 10px 0px;
-  min-height: 40vh;
-}
+
 #subredditsContainer {
   flex-basis: 25%;
   flex-grow: 0;
