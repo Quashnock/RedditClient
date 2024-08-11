@@ -1,0 +1,44 @@
+.comment {
+  width: 100%;
+  padding: 1.3em 6em 6em 6em;
+  box-sizing: border-box;
+  margin-bottom: 3em;
+  background-color: hsl(0, 0%, 98%);
+  transition: 0.1s ease-out box-shadow;
+}
+
+.comment:hover {
+  box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 5px 0px;
+}
+
+#commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+#commentHeader h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#author {
+  color: hsl(240, 100%, 70%);
+  font-size: 4.5em;
+  line-height: 3em;
+}
+
+#commentDate {
+  color: hsl(0, 0%, 25%);
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-style: italic;
+  align-self: center;
+}
+
+#commentContent {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}

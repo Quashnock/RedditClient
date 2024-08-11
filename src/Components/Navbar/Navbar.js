@@ -15,7 +15,9 @@ export default function NavBar({ dispatch }) {
     <header>
       <div id="logo">
         {RedditLogoSVG}
-        <h1>RedditMinimal</h1>
+        <h1>
+          Reddit<span>Minimal</span>
+        </h1>
       </div>
       <nav>
         <form onSubmit={submitHandler}>

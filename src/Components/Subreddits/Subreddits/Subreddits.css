@@ -2,12 +2,10 @@ aside {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
   padding: 3rem 3rem;
   overflow: hidden;
+  border-radius: 3px;
 }
 
 aside h2 {
   font-size: 3.5rem;
   margin-top: 0;
-}
-
-@media only screen and (max-width: 850px) {
 }

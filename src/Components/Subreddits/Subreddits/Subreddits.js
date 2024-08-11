@@ -2,6 +2,7 @@ import "./Subreddits.css";
 import Subreddit from "../Subreddit/Subreddit";
 import { getSubreddits } from "../subredditsSlice";
 import { useEffect, useState } from "react";
+import SubredditsMockResponse from "../../../Resources/SubredditsMockResponse";
 
 export default function Subreddits({ state, dispatch }) {
   /*
@@ -28,6 +29,9 @@ export default function Subreddits({ state, dispatch }) {
   useEffect(() => {
     dispatch(getSubreddits());
   }, [dispatch]);
+
+  const filteredList =
+    state.subredditsList || SubredditsMockResponse.data.children;
 
   return (
     <aside>

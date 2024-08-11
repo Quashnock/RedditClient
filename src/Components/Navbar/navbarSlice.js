@@ -7,7 +7,7 @@ const navbarSlice = createSlice({
   },
   reducers: {
     setTerm: (state, action) => {
-      state.term = action.payload;
+      state.term = action.payload.toLowerCase();
     },
   },
 });

@@ -4,7 +4,7 @@ import Subreddits from "../Components/Subreddits/Subreddits/Subreddits";
 import Posts from "../Components/PostsComponents/Posts/Posts";
 
 function App({ state, dispatch }) {
-  console.log(state.subreddits);
+  console.log(state.navbar.term);
   return (
     <div id="app">
       <NavBar dispatch={dispatch} />

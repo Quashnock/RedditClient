@@ -4,7 +4,7 @@ export const getSubreddits = createAsyncThunk(
   "subreddits/getSubreddits",
   async () => {
     const response = await fetch(
-      "https://www.reddit.com/subreddits/popular.json?limit=10"
+      "https://www.reddit.com/subreddits/popular.json?limit=20"
     );
     const json = await response.json();
     return json;
@@ -15,7 +15,7 @@ const subredditsSlice = createSlice({
   initialState: {
     isLoadingSubreddits: false,
     failedToLoadSubreddits: false,
-    selectedSubreddit: "",
+    selectedSubreddit: "Pics",
     subredditsList: [],
   },
   reducers: {
