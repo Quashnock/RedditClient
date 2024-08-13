@@ -9,7 +9,7 @@ export default function Subreddit({ title, img, selectedSubreddit, dispatch }) {
     } else {
       document.getElementById(title).classList.remove("selected");
     }
-  }, [selectedSubreddit]);
+  }, [selectedSubreddit, title]);
 
   return (
     <div

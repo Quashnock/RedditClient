@@ -15,7 +15,7 @@ const subredditsSlice = createSlice({
   initialState: {
     isLoadingSubreddits: false,
     failedToLoadSubreddits: false,
-    selectedSubreddit: "Pics",
+    selectedSubreddit: "pics",
     subredditsList: [],
   },
   reducers: {

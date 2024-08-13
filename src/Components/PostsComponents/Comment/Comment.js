@@ -15,12 +15,7 @@ export default function Comment({ commentData }) {
       return "< 1 hour ago";
     }
   }
-  function reduceNumSring(num) {
-    if (num > 1000) {
-      return `${Math.floor(num / 100) / 10}K`;
-    }
-    return num;
-  }
+
   return (
     <article className="comment">
       <div id="commentHeader">

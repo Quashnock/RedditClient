@@ -26,4 +26,7 @@
 .subreddit h3 {
   font-size: 2rem;
   margin-left: 1rem;
+  vertical-align: center;
+  line-height: 2rem;
+  height: 2rem;
 }
