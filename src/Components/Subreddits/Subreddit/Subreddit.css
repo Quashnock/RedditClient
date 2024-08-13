@@ -18,7 +18,7 @@
 }
 .subreddit img {
   height: 40%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   border: hsl(0, 0%, 80%) 3px solid;
   border-radius: 50%;
 }

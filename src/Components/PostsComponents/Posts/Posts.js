@@ -13,9 +13,6 @@ export default function Posts({ state, dispatch }) {
     );
   }, [state.subreddits.selectedSubreddit, dispatch, state.navbar.term]);
 
-  console.log(state.posts.postList);
-  console.log(state.subreddits.selectedSubreddit);
-
   function getCurrContent() {
     if (state.posts.loadingPosts) {
       return <div id="loadingCircle"></div>;

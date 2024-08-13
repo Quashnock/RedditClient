@@ -6,6 +6,7 @@
   padding: 3rem 0 1.5rem 0;
   margin-bottom: 3rem;
   transition: box-shadow ease-out 5s;
+  box-sizing: content-box;
 }
 .post:hover {
   box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 10px 0px;
@@ -37,6 +38,12 @@
   background-color: hsl(0, 0%, 95%);
 }
 
+.downArrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
 .upVoteGreen {
   color: green !important;
 }
@@ -60,7 +67,7 @@
 }
 
 #mainImage {
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px;
   margin: 0;
 }

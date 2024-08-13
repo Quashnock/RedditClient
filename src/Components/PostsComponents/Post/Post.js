@@ -103,7 +103,7 @@ export default function Post({ subreddit, postData, id }) {
           width="1em"
           height="1em"
           viewBox="0 0 24 24"
-          transform="rotate(180)"
+          className="downArrow"
           id={"downVoteArrow" + id}
           onClick={() => handleUpvoteChange("down")}
         >
@@ -139,7 +139,9 @@ export default function Post({ subreddit, postData, id }) {
           comments[1].data.children.length !== 0 && (
             <div id="commentsContainer">
               {comments[1].data.children.slice(0, -1).map((comment) => {
-                return <Comment commentData={comment.data} />;
+                return (
+                  <Comment commentData={comment.data} key={comment.data.id} />
+                );
               })}
             </div>
           )}
