@@ -20,6 +20,7 @@
   align-items: center;
   font-size: 1.75rem;
   padding: 0 2rem;
+  min-width: 10%;
 }
 #upvotesColumn h3 {
   margin: 1em;
@@ -67,7 +68,7 @@
 }
 
 #mainImage {
-  max-width: 100%;
+  width: 100%;
   border-radius: 8px;
   margin: 0;
 }
