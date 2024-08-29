@@ -21,7 +21,7 @@ In this project, you can select a subreddit and then view some of the current to
 - Search Icon by [Google](https://github.com/google/material-design-icons)
 - Comments Icon by [Pictogrammers](https://github.com/Templarian/MaterialDesign)
 ### Design
-The layout and UI/UX design of this app was taken from the example provided by the Codecademy team in their learning module "Portfolio Project: Reddit Client". The design is not my own.
+The layout and UI/UX design of this app follows the example provided by the Codecademy team in their learning module "Portfolio Project: Reddit Client". The design is not my own.
 
 ## Future Work
 Implement a Go Home button if a user searches and recieves no results.
