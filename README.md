@@ -13,6 +13,7 @@ In this project, you can select a subreddit and then view some of the current to
 - React
 - Redux
 - Netlify
+- Reddit JSON skimming API
 
 ## Credits
 ### Logos/Icons:
