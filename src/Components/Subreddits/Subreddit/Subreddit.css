@@ -4,11 +4,13 @@
   align-items: center;
   padding: 0 2.2rem;
   cursor: pointer;
-  border: black solid 2px;
+  border: #0c0c0c solid 2px;
   overflow-x: visible;
+  transition: background-color, color 200ms ease-in-out;
 }
 .subreddit:hover:not(.selected) {
-  background-color: hsl(0, 0%, 95%);
+  background-color: #0c0c0c;
+  color: aliceblue;
 }
 .selected {
   background-color: hsl(240, 100%, 95%);

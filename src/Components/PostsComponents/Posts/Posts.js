@@ -31,6 +31,7 @@ export default function Posts({ state, dispatch }) {
         </button>
       );
     }
+    console.log(state.posts.postList);
     return state.posts.postList
       .filter((post) =>
         post.data.title.toLowerCase().includes(state.navbar.term)

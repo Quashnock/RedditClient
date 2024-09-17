@@ -6,6 +6,7 @@
   background-color: hsl(0, 0%, 98%);
   transition: 0.1s ease-out box-shadow;
   border: solid 2px black;
+  border-radius: 2em;
 }
 
 #commentHeader {
@@ -21,7 +22,7 @@
 }
 
 #author {
-  color: hsl(240, 100%, 70%);
+  color: hsl(279, 55%, 55%);
   font-size: 4.5em;
   line-height: 3em;
   font-family: "Climate Crisis";

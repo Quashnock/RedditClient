@@ -1,9 +1,7 @@
 aside {
   border-bottom: 1em solid hsl(240, 100%, 5%);
-  padding: 0 3rem;
   overflow: hidden;
-  border-radius: 3px;
-  background-color: hsl(9, 80%, 64%);
+  background-color: aliceblue;
 }
 
 aside div {
@@ -11,6 +9,9 @@ aside div {
   flex-direction: row;
   overflow-x: scroll;
   gap: 1.5em;
+}
+
+aside div:has(h3) {
   margin: 3em;
 }
 

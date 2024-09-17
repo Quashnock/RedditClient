@@ -1,4 +1,3 @@
-import React from "react";
 export default (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +5,9 @@ export default (
     height="1em"
     viewBox="0 0 24 24"
   >
-    <path fill="currentColor" d="M15 20H9v-8H4.16L12 4.16L19.84 12H15z" />
+    <path
+      fill="#4ecb71"
+      d="m4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8z"
+    />
   </svg>
 );

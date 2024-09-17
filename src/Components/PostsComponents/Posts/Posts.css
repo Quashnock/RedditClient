@@ -7,6 +7,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 4em;
   margin-top: 5em;
+  align-items: start;
 }
 #loadingCircle {
   width: 15em;
@@ -30,6 +31,7 @@ main {
   cursor: pointer;
   border-radius: 0.5em;
   margin-top: 2em;
+  grid-column: 1 / span 2;
 }
 
 #reloadButton:hover {
@@ -42,5 +44,11 @@ main {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
   }
 }
