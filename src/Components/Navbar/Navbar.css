@@ -4,20 +4,22 @@ header {
   grid-template: 1fr / 1fr 1.5fr 1fr;
   column-gap: 2rem;
   align-items: center;
-  box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 10px 0px;
+  background-color: hsl(9, 80%, 64%);
+  border-bottom: 4px solid #0c0c0c;
 }
 #logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: hsl(240, 100%, 70%);
 }
 #logo svg {
   height: 5rem;
 }
 #logo h1 {
-  font-size: 2.5rem;
-  letter-spacing: 1.33%;
+  font-size: 3.5rem;
+  font-family: "Climate Crisis";
+  letter-spacing: 0.05em;
+  font-weight: 100;
 }
 span {
   color: black;
@@ -44,19 +46,22 @@ form input {
   background-color: hsl(0, 0%, 95%);
   padding: 1rem 1.5rem;
   border-radius: 8px 0 0 8px;
+  border: 2px solid #0c0c0c;
 }
 form button {
   flex-grow: 0;
   flex-basis: 8%;
   height: 100%;
   border: none;
-  background-color: hsl(0, 0%, 80%);
+  background-color: hsl(240, 100%, 70%);
   text-align: center;
   cursor: pointer;
   border-radius: 0 8px 8px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #0c0c0c;
+  border-left: transparent;
 }
 
 form button:hover {

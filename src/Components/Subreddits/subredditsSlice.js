@@ -3,11 +3,15 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const getSubreddits = createAsyncThunk(
   "subreddits/getSubreddits",
   async () => {
-    const response = await fetch(
-      "https://www.reddit.com/subreddits/popular.json?limit=20"
-    );
-    const json = await response.json();
-    return json;
+    try {
+      const response = await fetch(
+        "https://www.reddit.com/subreddits/popular.json?limit=20"
+      );
+      const json = await response.json();
+      return json;
+    } catch (err) {
+      throw new Error(err);
+    }
   }
 );
 const subredditsSlice = createSlice({

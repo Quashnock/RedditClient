@@ -7,6 +7,8 @@ export default function Post({ subreddit, postData, id }) {
   const [commentsActive, setCommentsActive] = useState(false);
   const [comments, setComments] = useState();
   const [upVoteMod, setUpVoteMode] = useState(0);
+  const [showImage, setShowImage] = useState(false);
+
   function getTimeSincePostString() {
     const currDate = Date.now();
     const hoursSincePostCreated = Math.round(
@@ -113,11 +115,17 @@ export default function Post({ subreddit, postData, id }) {
           />
         </svg>
       </div>
-      <div id="contentColumn">
+      <div
+        id="contentColumn"
+        onClick={() => {
+          setShowImage((prev) => !prev);
+        }}
+      >
         <h2 id="postTitle">{postData.title}</h2>
-        {(postData.url.includes("jpeg") || postData.url.includes("png")) && (
-          <img id="mainImage" src={postData.url} alt="" />
-        )}
+        {(showImage || commentsActive) &&
+          (postData.url.includes("jpeg") || postData.url.includes("png")) && (
+            <img id="mainImage" src={postData.url} alt="" />
+          )}
         <hr></hr>
         <div id="postSubContent">
           <div id="userProfile">

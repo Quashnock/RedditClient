@@ -6,22 +6,7 @@
 
 #mainContentContainer {
   min-height: 90vh;
-  margin-top: 2.5rem;
   display: flex;
   max-width: 100vw;
-}
-
-#subredditsContainer {
-  flex-basis: 25%;
-  flex-grow: 0;
-}
-
-@media only screen and (max-width: 850px) {
-  #mainContentContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  #subredditsContainer {
-    width: 100%;
-  }
+  flex-direction: column-reverse;
 }

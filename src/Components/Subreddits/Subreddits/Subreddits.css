@@ -1,11 +1,37 @@
 aside {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
-  padding: 3rem 3rem;
+  border-bottom: 1em solid hsl(240, 100%, 5%);
+  padding: 0 3rem;
   overflow: hidden;
   border-radius: 3px;
+  background-color: hsl(9, 80%, 64%);
+}
+
+aside div {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 1.5em;
+  margin: 3em;
+}
+
+/* width */
+aside div::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+aside div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+aside div::-webkit-scrollbar-thumb {
+  background: #0c0c0c;
 }
 
 aside h2 {
   font-size: 3.5rem;
-  margin-top: 0;
+  font-family: "Climate Crisis";
+  letter-spacing: 0.1rem;
+  font-weight: 100;
 }

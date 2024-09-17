@@ -10,17 +10,18 @@ export default function Subreddits({ state, dispatch }) {
 
   return (
     <aside>
-      <h2>Subreddits</h2>
-      {state.subredditsList &&
-        state.subredditsList.map((subreddit) => (
-          <Subreddit
-            title={subreddit.data.display_name}
-            img={subreddit.data.icon_img}
-            selectedSubreddit={state.selectedSubreddit}
-            dispatch={dispatch}
-            key={subreddit.data.id}
-          />
-        ))}
+      <div id="subredditsContainer">
+        {state.subredditsList &&
+          state.subredditsList.map((subreddit) => (
+            <Subreddit
+              title={subreddit.data.display_name}
+              img={subreddit.data.icon_img}
+              selectedSubreddit={state.selectedSubreddit}
+              dispatch={dispatch}
+              key={subreddit.data.id}
+            />
+          ))}
+      </div>
     </aside>
   );
 }

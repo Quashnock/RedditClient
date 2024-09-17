@@ -5,10 +5,7 @@
   margin-bottom: 3em;
   background-color: hsl(0, 0%, 98%);
   transition: 0.1s ease-out box-shadow;
-}
-
-.comment:hover {
-  box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 5px 0px;
+  border: solid 2px black;
 }
 
 #commentHeader {
@@ -27,6 +24,9 @@
   color: hsl(240, 100%, 70%);
   font-size: 4.5em;
   line-height: 3em;
+  font-family: "Climate Crisis";
+  font-weight: 100;
+  letter-spacing: 0.05rem;
 }
 
 #commentDate {
@@ -35,11 +35,13 @@
   font-weight: normal;
   font-style: italic;
   align-self: center;
+  font-family: "Climate Crisis";
 }
 
 #commentContent {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 0;
   overflow-wrap: anywhere;
+  font-family: "Teachers";
 }

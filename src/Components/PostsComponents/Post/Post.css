@@ -1,15 +1,17 @@
 .post {
   display: flex;
-  width: 100%;
-  box-shadow: rgba(77, 77, 86, 0.1) 0px 2px 10px 0px;
+  border: hsl(250, 100%, 5%) 1em solid;
+  background-color: hsl(48, 75%, 57%);
   border-radius: 6px;
   padding: 3rem 0 1.5rem 0;
   margin-bottom: 3rem;
-  transition: box-shadow ease-out 5s;
+  transition: box-shadow, transform ease-out 0.1s;
   box-sizing: content-box;
 }
+
 .post:hover {
-  box-shadow: rgba(77, 77, 86, 0.2) 0px 2px 10px 0px;
+  box-shadow: 2px 2px 0 hsl(250, 100%, 10%) !important;
+  transform: translate(-1px, -1px);
 }
 
 #upvotesColumn {
@@ -25,14 +27,15 @@
 #upvotesColumn h3 {
   margin: 1em;
   line-height: 0.6em;
-  color: hsl(0, 0%, 50%);
+  color: hsl(250, 100%, 10%);
 }
 
 #upvotesColumn svg {
   font-size: 4rem;
-  color: hsl(0, 0%, 50%);
+  color: hsl(250, 100%, 10%);
   cursor: pointer;
   border-radius: 25%;
+  box-shadow: 1px 1px solid hsl(250, 100%, 10%);
 }
 
 #upvotesColumn svg:hover {
@@ -46,35 +49,45 @@
 }
 
 .upVoteGreen {
-  color: green !important;
+  color: hsl(120, 100%, 25%) !important;
 }
 
 .downVoteRed {
-  color: red !important;
+  color: hsl(0, 100%, 40%) !important;
 }
 
 #contentColumn {
   flex-grow: 1;
   flex-basis: 100%;
   padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 #postTitle {
-  font-size: 2.6rem;
+  font-size: calc(1rem + 2vw);
   margin-top: 0;
   margin-bottom: 2rem;
-  letter-spacing: 1.33%;
-  color: hsl(0, 0%, 15%);
+  color: hsl(250, 100%, 13%);
+  font-family: "Climate Crisis";
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 #mainImage {
-  width: 100%;
   border-radius: 8px;
   margin: 0;
+  max-width: 100%;
+  border: solid 3px hsl(250, 100%, 5%);
 }
 
 hr {
   margin-top: 5rem;
+  border-radius: 3px;
+  border: solid 1px hsl(250, 100%, 10%);
 }
 
 #postSubContent {
@@ -83,6 +96,7 @@ hr {
   align-items: center;
   height: 5rem;
   font-size: 1.5rem;
+  border-top: 2px solid hsl(250, 100%, 5%);
 }
 
 #userProfile {
@@ -93,8 +107,8 @@ hr {
 
 #username {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: hsl(240, 100%, 70%);
+  color: hsl(240, 100%, 5%);
+  font-family: "Climate Crisis";
 }
 
 #commentsToggle {
@@ -105,11 +119,14 @@ hr {
   display: flex;
   align-items: center;
   cursor: pointer;
-  color: hsl(0, 0%, 45%);
+  color: hsl(250, 100%, 5%);
+  border: 1px solid transparent;
+  transition: background-color, border 200ms ease-in-out;
 }
 
 #commentsToggle:hover {
   background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(250, 100%, 5%);
 }
 
 #commentsToggle svg {
