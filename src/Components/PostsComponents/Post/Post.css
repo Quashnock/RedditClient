@@ -67,6 +67,11 @@
   color: red !important;
 }
 
+svg.upVoteGreen,
+svg.downVoteRed {
+  background-color: hsl(0, 0%, 95%);
+}
+
 #imageIcon {
   font-size: 3rem;
 }

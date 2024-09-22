@@ -4,7 +4,7 @@ header {
   grid-template: 1fr / 1fr 1.5fr 1fr;
   column-gap: 2rem;
   align-items: center;
-  background-color: hsl(279, 55%, 55%);
+  background-color: rgb(159, 77, 203);
   border-bottom: 4px solid #0c0c0c;
 }
 #logo {
