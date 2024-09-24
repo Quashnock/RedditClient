@@ -50,7 +50,7 @@
 }
 
 #upVotes svg:hover {
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsla(0, 0%, 95%, 40%);
 }
 
 .downArrow {
@@ -102,10 +102,10 @@ svg.downVoteRed {
   margin: 0;
   margin-bottom: 1em;
   color: #0c0c0c;
-  font-family: "Climate Crisis";
+  font-family: "Teachers";
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 900;
 }
 
 #mainImage {
