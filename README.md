@@ -1,4 +1,5 @@
 # Mock Reddit Client
+[Live Demo](https://redditclientquashnock.netlify.app/)
 
 ## Description
 This project was part of my Codecademy Frontend Career Path certification. It was my first time using the Redux library to keep track of the state in a web application. While the syntax was difficult at first, I found that Redux helped me create a better organized application using the store and action thunks.
